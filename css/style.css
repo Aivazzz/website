@@ -229,6 +229,15 @@ hr {
     padding: 80px 0;
 }
 
+.section--back {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    
+    background: url("../image/back1.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
 .section_header {
     width: 100%;
     max-width: 950px;
@@ -387,4 +396,20 @@ hr {
     font-size: 15px;
     padding-left: 85px;
     padding-right: 35px;
+}
+
+.section_text1 {
+    font-size: 15px;
+    color: rgb(20, 20, 20);
+}
+
+.back {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.back_item {
+    display: block;
 }
