@@ -413,3 +413,59 @@ hr {
 .back_item {
     display: block;
 }
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info_item {
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.info_photo {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 70%;
+
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 1;
+}
+
+.info_glav {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    color: rgb(20, 20, 20);
+    font-style: italic;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.info_dop {
+    font-size: 15px;
+    color: rgb(20, 20, 20);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.info_text {
+    font-size: 15px;
+    color: #999;
+}
+
+.info_text::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 15px 0;
+
+    background-color: #f5deb3;
+}
