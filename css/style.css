@@ -276,7 +276,7 @@ hr {
 }
 
 .section_text {
-    font-size: 15px;
+    font-size: 17px;
     color: #999;
 }
 
@@ -405,7 +405,7 @@ hr {
 }
 
 .section_text1 {
-    font-size: 15px;
+    font-size: 17px;
     color: rgb(20, 20, 20);
 }
 
@@ -418,6 +418,83 @@ hr {
 
 .back_item {
     display: block;
+}
+
+.product {
+    display: inline-flex;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.product_item {
+    padding-left: 35px;
+    padding-right: 25px;
+    flex: 0 0 24%;
+    position: relative;
+}
+
+.product_item:before,
+.product_item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product_item:before {
+    background-image: url(../image/up.png);
+}
+
+.product_item:after {
+    background-image: url(../image/down.png);
+}
+
+.product_title {
+    margin-top: 50px;
+    margin-bottom: -10px;
+    font-weight: 600;
+}
+
+.product_price {
+    color: #f5deb3;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product_btn {
+    font-size: 0;
+    color: transparent;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.product_btn:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+}
+
+.product_btn--prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.product_btn--next {
+    margin-top: 4px;
+    right: 0;
+    transform: rotate(135deg);
 }
 
 .workers {
@@ -472,7 +549,7 @@ hr {
     position: absolute;
     top: 50%;
     z-index: 1;
-    transform: translateY(50%);
+    transform: translateY(-50%);
 }
 
 .workers_btn:after {
@@ -491,6 +568,7 @@ hr {
 }
 
 .workers_btn--next {
+    margin-top: -5px;
     right: 0;
     transform: rotate(135deg);
 }
@@ -522,7 +600,7 @@ hr {
 .info_glav {
     margin-bottom: 5px;
 
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(20, 20, 20);
     font-style: italic;
     font-weight: 300;
@@ -537,7 +615,7 @@ hr {
 }
 
 .info_text {
-    font-size: 15px;
+    font-size: 16px;
     color: #999;
 }
 
