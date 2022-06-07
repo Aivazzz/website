@@ -39,6 +39,7 @@ hr {
     justify-content: center;
     width: 100%;
     height: 100vh;
+    margin-top: 70px;
 
     background:url("../image/header1.png") center no-repeat;
     -webkit-background-size: cover;
@@ -82,7 +83,10 @@ hr {
 
 .header {
     width: 100%;
+    height: 70px;
 
+    background-color: rgb(59, 58, 58);
+    font-family: 'Kaushan Script', cursive;
     position: absolute;
     top: 0;
     left: 0;
@@ -97,15 +101,16 @@ hr {
 }
 
 .header_logo {
+    margin-top: 10px;
     color: #f5deb3;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 28px;
-    font-weight:700;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .nav {
+    margin-bottom: 10px;
     font-size: 14px;
-    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -116,7 +121,7 @@ hr {
     position: relative;
     padding-top: 30px;
 
-    color: rgb(20, 20, 20);
+    color: #f5deb3;
     text-decoration: none;
 
     transition: color .2s linear;
@@ -128,7 +133,7 @@ hr {
     width: 100%;
     height: 3px;
 
-    background-color: rgb(20, 20, 20);
+    background-color: #f5deb3;
     opacity: 0;
 
     position: absolute;
@@ -492,9 +497,58 @@ hr {
 }
 
 .product_btn--next {
-    margin-top: 4px;
     right: 0;
     transform: rotate(135deg);
+}
+
+.wrapper {
+    width: 753px;
+    margin: 0 auto -100px;
+    color: rgb(20, 20, 20);
+}
+
+.red {
+    color: red;
+}
+
+.form_inputs {
+    margin-top: 50px;
+    display: flex;
+}
+
+.feed {
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.feed:first-of-type {
+    margin-right: 23px;
+}
+
+textarea {
+    width: 100%;
+    height: 163px;
+}
+
+.feed, textarea {
+    border: 1px solid rgb(20, 20, 20);
+    margin-top: 1px;
+}
+
+.button_block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feed[type=submit] {
+    width: 165px;
+    height: 40px;
+    background: #f5deb3;
+    color: rgb(20, 20, 20);
+    margin-right: 0;
+    margin-top: 20px;
 }
 
 .workers {
@@ -568,7 +622,6 @@ hr {
 }
 
 .workers_btn--next {
-    margin-top: -5px;
     right: 0;
     transform: rotate(135deg);
 }
@@ -576,6 +629,7 @@ hr {
 .info {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 70px;
 }
 
 .info_item {
@@ -589,7 +643,7 @@ hr {
     width: 110px;
     height: 110px;
 
-    border-radius: 70%;
+    border-radius: 50%;
 
     position: absolute;
     top: 0;
@@ -600,7 +654,7 @@ hr {
 .info_glav {
     margin-bottom: 5px;
 
-    font-size: 15px;
+    font-size: 14px;
     color: rgb(20, 20, 20);
     font-style: italic;
     font-weight: 300;
@@ -609,7 +663,7 @@ hr {
 
 .info_dop {
     font-size: 15px;
-    color: rgb(20, 20, 20);
+    color: #333;
     font-style: italic;
     font-weight: 300;
 }
