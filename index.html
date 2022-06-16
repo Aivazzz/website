@@ -7,6 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1e26d01c54.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
     <title>Хлебная лавка</title>
 </head>
 <body>
@@ -40,7 +45,7 @@
                 <h1 class="intro_title">Хлебная Лавка</h1>
                 <h2 class="intro_suptitle">Вкуснейшие мучные изделия сделанные из качественных продуктов!</h2>
     
-                <a class="btn" href="#">Наши товары</a>
+                <a class="btn" href="#" data-scroll="#goods">Наши товары</a>
             </div>
         </div>
     
@@ -48,13 +53,16 @@
             <div class="container">
                 <div class="slider_inner">
                     <div class="slider_item active">
-                        <span class="slider_num">01</span>
+                        <span class="slider_num">Главная</span>
                     </div>
                     <div class="slider_item">
-                        <span class="slider_num">02</span>
+                        <span class="slider_num">О нас</span>
                     </div>
                     <div class="slider_item">
-                        <span class="slider_num">03</span>
+                        <span class="slider_num">Товары</span>
+                    </div>
+                    <div class="slider_item">
+                        <span class="slider_num">Контакты</span>
                     </div>
                 </div>
             </div>
@@ -70,9 +78,7 @@
                 <h3 class="section_suptitle">Приходите к нам!</h3>
                 <h2 class="section_title">Мини-пекарня</h2>
                 <div class="section_text">
-                    <p>Этот бизнес привлекает прибыльностью и стабильностью во все времена, но чтобы начать дело,
-                        требуется решительность и правельное понимание, как приупеть в это сфере. В таком случае лучше всего учиться на опыте, но не своем,
-                         а чужом. Мы расскажем вам о нашей мини-пекарни с большим выбором ассортимента.</p>
+                    <p>Этот бизнес привлекает прибыльностью и стабильностью во все времена, но чтобы начать дело, требуется решительность и правельное понимание, как приупеть в это сфере. В таком случае лучше всего учиться на опыте, но не своем, а чужом. Мы расскажем вам о нашей мини-пекарни с большим выбором ассортимента.</p>
                 </div>
             </div>
 
@@ -80,7 +86,7 @@
                 <div class="about_item">
                     <div class="about_inner">
                         <div class="about_img">
-                            <img src="image/2content1.jpg" alt="Error">
+                            <img src="image/content/2content1.jpg" alt="Error">
                         </div>
                         <div class="about_text">Самая</div>
                     </div>
@@ -88,7 +94,7 @@
                 <div class="about_item">
                     <div class="about_inner">
                         <div class="about_img">
-                            <img src="image/2content2.jpg" alt="Error">
+                            <img src="image/content/2content2.jpg" alt="Error">
                         </div>
                         <div class="about_text">Свежая</div>
                     </div>
@@ -96,7 +102,7 @@
                 <div class="about_item">
                     <div class="about_inner">
                         <div class="about_img">
-                            <img src="image/2content3.jpg" alt="Error">
+                            <img src="image/content/2content3.jpg" alt="Error">
                         </div>
                         <div class="about_text">Выпечка</div>
                     </div>
@@ -112,15 +118,15 @@
 
             <div class="soc_sety">
                 <a class="soc_item" href="https://instagram.com/lavka_hleba_tsimlyansk?utm_medium=copy_link" target="_blank"> 
-                    <img src="image/instagram.png" alt="Error">
+                    <img src="image/soc/instagram.png" alt="Error">
                     <div class="soc_text">Instagram</div>
                 </a>
                 <a class="soc_item" href="https://vk.com/id711139272" target="_blank">
-                    <img src="image/vkontakte.png" alt="Error">
+                    <img src="image/soc/vkontakte.png" alt="Error">
                     <div class="soc_text">Vkontakte</div>
                 </a>
                 <a class="soc_item" href="https://t.me/lavka_hleba_volgodonsk_161" target="_blank">
-                    <img src="image/tg.png" alt="Error">
+                    <img src="image/soc/tg.png" alt="Error">
                     <div class="soc_text">Telegram</div>
                 </a>
             </div>
@@ -139,41 +145,34 @@
 
             <div class="glav">
                 <div class="glav_item">
-                    <img class="glav_img" src="image/mini1.png" alt="Error">
+                    <img class="glav_img" src="image/mini/mini1.png" alt="Error">
                     <div class="glav_title">Вкус</div>
-                    <div class="glav_text">А вы попробуйте! После такого возможно именно вы станете нашим 
-                        постоянным клиентом!</div>
+                    <div class="glav_text">А вы попробуйте! После такого возможно именно вы станете нашим постоянным клиентом!</div>
                 </div>
                 <div class="glav_item">
-                    <img class="glav_img" src="image/mini2.png" alt="Error">
+                    <img class="glav_img" src="image/mini/mini2.png" alt="Error">
                     <div class="glav_title">Польза</div>
-                    <div class="glav_text">Свежая выпечка подпитывает мозг, служит топливом для нервной системы, при
-                        тяжелых работах или нарушенном режиме питания позволяет быстро утолить голод и
-                        восстановить силы.</div>
+                    <div class="glav_text">Свежая выпечка подпитывает мозг, служит топливом для нервной системы, при тяжелых работах или нарушенном режиме питания позволяет быстро утолить голод и восстановить силы.</div>
                 </div>
                 <div class="glav_item">
-                    <img class="glav_img" src="image/mini3.png" alt="Error">
+                    <img class="glav_img" src="image/mini/mini3.png" alt="Error">
                     <div class="glav_title">Ингредиенты</div>
-                    <div class="glav_text">Мы выпекаем каждый вид изделия точно и в правильной 
-                        последовательности смешав целый ряд компонентов таких как: опара, полезные вкусовые 
-                        добавки и многое другое.</div>
+                    <div class="glav_text">Мы выпекаем каждый вид изделия точно и в правильной последовательности смешав целый ряд компонентов таких как: опара, полезные вкусовые добавки и многое другое.</div>
                 </div>
                 <div class="glav_item">
-                    <img class="glav_img" src="image/mini3.png" alt="Error">
+                    <img class="glav_img" src="image/mini/mini4.png" alt="Error">
                     <div class="glav_title">Свежесть</div>
                     <div class="glav_text">Ежедневно утренняя выпечка ждет вас в нашей мини-пикарне. Успей пока всё не разобрали!.</div>
                 </div>
                 <div class="glav_item">
-                    <img class="glav_img" src="image/mini3.png" alt="Error">
+                    <img class="glav_img" src="image/mini/mini5.png" alt="Error">
                     <div class="glav_title">Разнообразие</div>
-                    <div class="glav_text">Успех нашей мини-пекарни во многом определяется разнообразием и
-                        эксклюзивностью ее ассортимента с которым вы можете ознакомиться ниже.</div>
+                    <div class="glav_text">Успех нашей мини-пекарни во многом определяется разнообразием и эксклюзивностью ее ассортимента с которым вы можете ознакомиться ниже.</div>
                 </div>
                 <div class="glav_item">
-                    <img class="glav_img" src="image/mini3.png" alt="Error">
+                    <img class="glav_img" src="image/mini/mini6.png" alt="Error">
                     <div class="glav_title">Качество</div>
-                    <div class="glav_text">Наша выпечка не теряет свежасти на протяжение целова дня благодаря
-                        правельному хранению.</div>
+                    <div class="glav_text">Наша выпечка не теряет свежасти на протяжение целова дня благодаря правельному хранению.</div>
                 </div>
             </div>
 
@@ -188,14 +187,11 @@
                 <h3 class="section_suptitle">Утренняя выпечка!</h3>
                 <h2 class="section_title">Почему мы?</h2>
                 <div class="section_text1">
-                    <p>Заказываются качественные ингредиенты от поставщиков, которые создают горантию на протяжении 
-                        многих лет. Повара приходят на работу в пять часов утра и уже к восьми часам на прилавках 
-                        появляется горячих хлеб и многие другие хлебные изделия. Выпечка создается с соблюдений 
-                        всех норм создания.</p>
+                    <p>Заказываются качественные ингредиенты от поставщиков, которые создают горантию на протяжении многих лет. Повара приходят на работу в пять часов утра и уже к восьми часам на прилавках появляется горячих хлеб и многие другие хлебные изделия. Выпечка создается с соблюдений всех норм создания.</p>
                 </div>
             </div>
             <div class="back">
-                <img class="back_item" src="image/povar.png" alt="Error">
+                <img class="back_item" src="image/back/povar.png" alt="Error">
             </div>
 
         </div>
@@ -211,33 +207,61 @@
             </div>
 
             <div class="product">
-
                 <div class="product_item">
-                    <img src="image/product1.png" alt="Error">
-                    <p class="product_title">Ржаной хлеб</p>
+                    <img class= "product_img" src="image/product/product1.png" alt="Error">
+                    <p class="product_title">Нарезной хлеб</p>
+                    <p class="product_info">......</p>
+                    <p class="product_price">70 руб</p>
+                </div>
+                <div class="product_item">
+                    <img class= "product_img" src="image/product/product1.png" alt="Error">
+                    <p class="product_title">Ржанной хлеб</p>
+                    <p class="product_info">......</p>
+                    <p class="product_price">130 руб</p>
+                </div>
+                <div class="product_item">
+                    <img class= "product_img" src="image/product/product1.png" alt="Error">
+                    <p class="product_title">Батон</p>
+                    <p class="product_info">......</p>
                     <p class="product_price">60 руб</p>
                 </div>
-
                 <div class="product_item">
-                    <img src="image/product1.png" alt="Error">
-                    <p class="product_title">Нарезной хлеб</p>
-                    <p class="product_price">140 руб</p>
+                    <img class= "product_img" src="image/product/product1.png" alt="Error">
+                    <p class="product_title">Мини-пицца</p>
+                    <p class="product_info">......</p>
+                    <p class="product_price">80 руб</p>
                 </div>
-
                 <div class="product_item">
-                    <img src="image/product1.png" alt="Error">
-                    <p class="product_title">Пшеничный хлеб</p>
+                    <img class= "product_img" src="image/product/product1.png" alt="Error">
+                    <p class="product_title">Кекс</p>
+                    <p class="product_info">......</p>
                     <p class="product_price">90 руб</p>
                 </div>
-
                 <div class="product_item">
-                    <img src="image/product1.png" alt="Error">
-                    <p class="product_title">Просто хлеб</p>
-                    <p class="product_price">75 руб</p>
+                    <img class= "product_img" src="image/product/product1.png" alt="Error">
+                    <p class="product_title">Хлею с отрубями</p>
+                    <p class="product_info">......</p>
+                    <p class="product_price">65 руб</p>
                 </div>
-
+                <div class="product_item">
+                    <img class= "product_img" src="image/product/product1.png" alt="Error">
+                    <p class="product_title">Черный хлеб</p>
+                    <p class="product_info">......</p>
+                    <p class="product_price">70 руб</p>
+                </div>
+                <div class="product_item">
+                    <img class= "product_img" src="image/product/product1.png" alt="Error">
+                    <p class="product_title">Булочки с начинкой</p>
+                    <p class="product_info">......</p>
+                    <p class="product_price">70 руб</p>
+                </div>
+                <div class="product_item">
+                    <img class= "product_img" src="image/product/product1.png" alt="Error">
+                    <p class="product_title">Мини-тортик</p>
+                    <p class="product_info">......</p>
+                    <p class="product_price">130 руб</p>
+                </div>
             </div>
-            
 
         </div>
     </section>
@@ -251,8 +275,7 @@
                 <h3 class="section_suptitle">Захотелось?</h3>
                 <h2 class="section_title">Интересные мучные блюда</h2>
                 <div class="section_text">
-                    <p>Мучные изделия играю огромную роль в жизни человека. К ним можно добавлять различные ингредиенты
-                        и сделать свой перекус или полноценный прием пищи ещё лучше!</p>
+                    <p>Мучные изделия играю огромную роль в жизни человека. К ним можно добавлять различные ингредиенты и сделать свой перекус или полноценный прием пищи ещё лучше!</p>
                 </div>
             </div>
         </div>
@@ -260,14 +283,14 @@
         <div class="rec">
             <div class="rec_col">
                 <div class="rec_item">
-                    <img class="rec_image" src="image/rec1.jpg" alt="Error">
+                    <img class="rec_image" src="image/rec/rec1.jpg" alt="Error">
                     <div class="rec_info">
                         <div class="rec_title">Вкусно и быстро</div>
                         <div class="rec_text">Брускетта с авокадо</div>
                     </div>
                 </div>
                 <div class="rec_item">
-                    <img class="rec_image" src="image/rec2.jpg" alt="Error">
+                    <img class="rec_image" src="image/rec/rec2.jpg" alt="Error">
                     <div class="rec_info">
                         <div class="rec_title">Лучший десерт</div>
                         <div class="rec_text">Пичинюшки</div>
@@ -277,14 +300,14 @@
     
             <div class="rec_col">
                 <div class="rec_item">
-                    <img class="rec_image" src="image/rec3.jpg" alt="Error">
+                    <img class="rec_image" src="image/rec/rec3.jpg" alt="Error">
                     <div class="rec_info">
                         <div class="rec_title">Чем утром позавтракать?</div>
                         <div class="rec_text">Блинчики</div>
                     </div>
                 </div>
                 <div class="rec_item">
-                    <img class="rec_image" src="image/rec4.jpg" alt="Error">
+                    <img class="rec_image" src="image/rec/rec4.jpg" alt="Error">
                     <div class="rec_info">
                         <div class="rec_title">Быстрый перекус</div>
                         <div class="rec_text">Пирог с яблоком</div>
@@ -294,7 +317,7 @@
     
             <div class="rec_col">
                 <div class="rec_item">
-                    <img class="rec_image" src="image/rec5.jpg" alt="Error">
+                    <img class="rec_image" src="image/rec/rec5.jpg" alt="Error">
                     <div class="rec_info">
                         <div class="rec_title">Опять десерт</div>
                         <div class="rec_text">Эклеры</div>
@@ -304,14 +327,14 @@
     
             <div class="rec_col">
                 <div class="rec_item">
-                    <img class="rec_image" src="image/rec6.jpg" alt="Error">
+                    <img class="rec_image" src="image/rec/rec6.jpg" alt="Error">
                     <div class="rec_info">
                         <div class="rec_title">Опетитные</div>
                         <div class="rec_text">Кексы</div>
                     </div>
                 </div>
                 <div class="rec_item">
-                    <img class="rec_image" src="image/rec7.jpg" alt="Error">
+                    <img class="rec_image" src="image/rec/rec7.jpg" alt="Error">
                     <div class="rec_info">
                         <div class="rec_title">Выглядит вкусно</div>
                         <div class="rec_text">Шоколадный пирог</div>
@@ -324,6 +347,39 @@
     </section>
 
 
+    <section>
+        <div class="container">
+
+            <div class="section_header">
+
+                <h3 class="section_suptitle">Мы вас заинтересовали?</h3>
+                <h2 class="section_title">Свяжитесь с нами!</h2>
+                <div class="section_text">
+                    <p>Вы можете оставить свое сообщение, а так же указать свой номер для того, чтобы наши работники смогли вам позвони без траты ваших ресурсов.</p>
+                </div>
+            </div>
+        </div>
+            <div class="contact_form">
+                <div class="contact_wrapper">
+                    <form action="sender.php" method="post">
+                        <div class="form_inputs">
+                            <p class="form_inf">Ваша почта<span class="red">*</span></span><input class="inp" type="email" name="email" placeholder="Почта" required></p>
+
+                            <p class="form_inf">Номер телефона<span class="red">*</span></span><input class="inp" type="text" id="phone" name="phone" placeholder="Ваш телефон" required></p>
+
+                        </div>
+                        <p class="form_inf">Сообщение<span class="red">*</span></span></p>
+                        <textarea name="text" placeholder="Cообщение"></textarea>
+                        <div class="but_block">
+                            <button class="inp" type="button">Отправить</button>
+                        </div>
+                        <div id="status"></div>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+
     <div class="section section--workers">
         <div class="container">
 
@@ -332,20 +388,16 @@
                 <div data-slider>
                     <div>
                         <div class="workers_item">
-                            <img class="workers_photo" src="image/worker1.jpg" alt="Error">
-                            <div class="workers_text">Доброго времени суток всем. По тому что подписчики прибавились, я понял 
-                                что пост про пекарню и что с ней связано будет интересен. В пекарне я отработал на должности 
-                                пекаря(официальная должность) и в должности ИО тестомеса и заведующий производства пекарни(некоторое время).</div>
+                            <img class="workers_photo" src="image/worker/worker1.jpg" alt="Error">
+                            <div class="workers_text">Доброго времени суток всем. По тому что подписчики прибавились, я поняла что пост про пекарню и что с ней связано будет интересен. В пекарне я отработала на должности пекаря(официальная должность) и в должности ИО тестомеса и заведующая производства пекарни(некоторое время).</div>
                             <div class="workers_name">Марьяна Ленова</div>
                         </div>
                     </div>
                     <div>
                         <div class="workers_item">
-                            <img class="workers_photo" src="image/worker1.jpg" alt="Error">
-                            <div class="workers_text">Доброго времени суток всем. По тому что подписчики прибавились, я понял 
-                                что пост про пекарню и что с ней связано будет интересен. В пекарне я отработал на должности 
-                                пекаря(официальная должность) и в должности ИО тестомеса и заведующий производства пекарни(некоторое время).</div>
-                            <div class="workers_name">Марьяна Ленова</div>
+                            <img class="workers_photo" src="image/worker/worker2.jpg" alt="Error">
+                            <div class="workers_text">В первую очередь, задумайтесь о подаче своих блюд. Люди уже привыкли видеть красивую картинку, и кондитер должен удовлетворить это желание.</div>
+                            <div class="workers_name">Ангелина Степановна</div>
                         </div>
                     </div>
                 </div>
@@ -366,36 +418,36 @@
 
             <div class="info">
                 <div class="info_item">
-                    <img class="info_photo" src="image/info1.png" alt="Error">
+                    <img class="info_photo" src="image/info/info1.png" alt="Error">
                     <div class="info_content">
                         <div class="info_glav">Наш адрес</div>
-                        <div class="info_text">Мы работаем по адресу какой-то там.</div>
+                        <div class="info_text">Мы работаем по адресу п.Синегорский.,Белокалитвинский р-н мкр Юбилейный 18.</div>
                     </div>
                 </div>
 
                 <div class="info_item">
-                    <img class="info_photo" src="image/info2.png" alt="Error">
+                    <img class="info_photo" src="image/info/info2.png" alt="Error">
                     <div class="info_content">
                         <div class="info_glav">Время работы</div>
-                        <div class="info_text">Дни:Пн-Воск. <p>Время: 8:00-20:00.</p></div>
+                        <div class="info_text">Дни:Понедельник-Воскресенье. <p>Время: 8:00-20:00.</p></div>
                     </div>
                 </div>
 
                 <hr>
 
                 <div class="info_item">
-                    <img class="info_photo" src="image/info3.png" alt="Error">
+                    <img class="info_photo" src="image/info/info3.png" alt="Error">
                     <div class="info_content">
                         <div class="info_glav">Скидки</div>
-                        <div class="info_text">С 18:00 некоторая продукции продается со скидкой 20%.</div>
+                        <div class="info_text">С 19:00 некоторая продукции продается со скидкой 20%.</div>
                     </div>
                 </div>
 
                 <div class="info_item">
-                    <img class="info_photo" src="image/info4.png" alt="Error">
+                    <img class="info_photo" src="image/info/info4.png" alt="Error">
                     <div class="info_content">
-                        <div class="info_glav">Новинки</div>
-                        <div class="info_text">Мы расширяемся наши товары, которое скоро появится на сайте!.</div>
+                        <div class="info_glav">Номер телефона:</div>
+                        <div class="info_text">Если у вас есть пожиланию, то позвоните по номеру:+7(928)531-45-21.</div>
                     </div>
                 </div>
             </div>
@@ -421,8 +473,7 @@
             <div class="footer_inner">
                 <div class="footer_col  footer_col--first">
                     <div class="footer_logo">XL</div>
-                    <div class="footer_text">Надеемся, что мы привлекли ваше внимание и вы посетите наш магазин,
-                         став в дальнейшем постоянными клиентом. Не забывайте подписываться на наши социальны сети!</div>
+                    <div class="footer_text">Надеемся, что мы привлекли ваше внимание и вы посетите наш магазин, став в дальнейшем постоянными клиентом. Не забывайте подписываться на наши социальны сети!</div>
                     
                     <div class="footer_social">
                         <div class="footer_social-header">
@@ -441,11 +492,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <form class="subscribe" action="/" method="post">
-                        <input class="subscribe_input" type="email" name="name" placeholder="Ваша почта...">
-                        <button class="subscribe_btn" type="submit">Подписаться</button>
-                    </form>
                 </div>
 
                 <div class="footer_col  footer_col--third">
@@ -453,22 +499,22 @@
     
                     <div class="instagram">
                         <a class="instagram_item" href="https://instagram.com/lavka_hleba_tsimlyansk?utm_medium=copy_link" target="_blank">
-                            <img src="image/instagram 1.jpg" alt="Error">
+                            <img src="image/instagram/instagram 1.jpg" alt="Error">
                         </a>
                         <a class="instagram_item" href="https://instagram.com/lavka_hleba_tsimlyansk?utm_medium=copy_link" target="_blank">
-                            <img src="image/instagram 2.jpg" alt="Error">
+                            <img src="image/instagram/instagram 2.jpg" alt="Error">
                         </a>
                         <a class="instagram_item" href="https://instagram.com/lavka_hleba_tsimlyansk?utm_medium=copy_link" target="_blank">
-                            <img src="image/instagram 3.jpg" alt="Error">
+                            <img src="image/instagram/instagram 3.jpg" alt="Error">
                         </a>
                         <a class="instagram_item" href="https://instagram.com/lavka_hleba_tsimlyansk?utm_medium=copy_link" target="_blank">
-                            <img src="image/instagram 4.jpg" alt="Error">
+                            <img src="image/instagram/instagram 4.jpg" alt="Error">
                         </a>
                         <a class="instagram_item" href="https://instagram.com/lavka_hleba_tsimlyansk?utm_medium=copy_link" target="_blank">
-                            <img src="image/instagram 5.jpg" alt="Error">
+                            <img src="image/instagram/instagram 5.jpg" alt="Error">
                         </a>
                         <a class="instagram_item" href="https://instagram.com/lavka_hleba_tsimlyansk?utm_medium=copy_link" target="_blank">
-                            <img src="image/instagram 6.jpg" alt="Error">
+                            <img src="image/instagram/instagram 6.jpg" alt="Error">
                         </a>
                     </div>
                 </div>
@@ -482,14 +528,5 @@
         </div>
     </footer>
 </div>
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
-
-
-
 </body> 
 </html>
