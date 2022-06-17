@@ -566,13 +566,13 @@ hr {
 
 .product_img {
     display: block;
-    margin: 0 auto 15px;
+    margin: 30px auto 50px;
 }
 
 .product_title {
     font-weight: 900;
     font-size: 15px;
-    margin: 40px auto 40px;
+    margin: 0 auto 50px;
     text-align: center;
 }
 

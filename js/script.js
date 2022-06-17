@@ -32,7 +32,7 @@ jQuery(document).ready(function () {
     checkScroll(scrollOffset);
 
     $(window).on("scroll", function() {
-        scrollOffset = $(this).scrollTop();
+        scrollOffset = $(this).scrollTop(); 
 
         checkScroll(scrollOffset);
     });
