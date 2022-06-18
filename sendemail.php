@@ -20,8 +20,10 @@ try {
     $mail->isSMTP();
     $mail->Host = "smtp.mail.ru";
     $mail->SMTPAuth = true;
+    $mail->Username = "x106561";
+    $mail->Password = ".J%v^*c*QJM#uk6R";
     $mail->SMTPSecure = ssl;
-    $mail->Port = 465;
+    $mail->Port = 21;
     $mail->CharSet = 'UTF-8';
     $mail->setFrom('$email');
     $mail->addAddress('xlebnailavka@mail.ru');

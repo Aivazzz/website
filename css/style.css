@@ -419,7 +419,7 @@ hr {
 }
 
 .about_img {
-    background: linear-gradient(to bottom, #ebb85a, #f5deb3);
+    background: linear-gradient(to bottom, #ecac35, #f3dbb2);
 
     transition: transform .2s linear;
 }
@@ -544,6 +544,7 @@ hr {
 .product_item {
     width: calc(100% / 3);
     margin-bottom: 15px;
+    height: 470px;
     box-shadow: 0 3px 10px rgba(252, 204, 101, 0.3);
     padding: 0 35px;
     position: relative;
@@ -572,7 +573,7 @@ hr {
 .product_title {
     font-weight: 900;
     font-size: 15px;
-    margin: 0 auto 50px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -600,7 +601,7 @@ hr {
 .rec_item {
     position: relative;
 
-    background: linear-gradient(to bottom, #ebb85a, #f5deb3);
+    background: linear-gradient(to bottom, #ecac35, #f3dbb2);
 }
 
 .rec_item:hover .rec_image {
